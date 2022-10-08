@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form>
+	<form action="/myapp/member/login" method="POST">
 		ID : <input type="text" name="id"><br>
 		PW : <input type="password" name="pw"><br>
 		<input type="submit" value="LOGIN">

@@ -1,6 +1,7 @@
 package com.smhrd.myapp;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -17,5 +18,21 @@ public class MainController {
 	@RequestMapping(value="/join", method=RequestMethod.GET)
 	public String joinPage() {
 		return "join";
+	}
+	
+	//5버전 이상부터 사용
+	@GetMapping("/login")
+	public String loginPage() {
+		return "login";
+	}
+	
+	@GetMapping("/update")
+	public String updatePage() {
+		return "update";
+	}
+	
+	@GetMapping("select")
+	public String selectPage() {
+		return "select";
 	}
 }
