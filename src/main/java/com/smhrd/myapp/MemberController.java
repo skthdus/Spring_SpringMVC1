@@ -62,4 +62,15 @@ public class MemberController {
 		model.addAttribute("memberList", memberList); //model객체에 데이터 저장
 		return "select";
 	}
+	
+	//1. delete()메서드 작성 
+	//- 쿼리스트링으로 보내준 id 값 받기
+	//mapper interface : deleteMember() 호출
+	//전체회원조회 페이지로 이동 -> 삭제한 회원이 안 보이는지 확인
+	@GetMapping("/member/delete")
+	public String delete(@RequestParam("id")String id) {
+		memberMapper.deleteMember(id);
+		return "redirect:/member/select";
+	}
+
 }

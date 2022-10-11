@@ -13,4 +13,9 @@ public interface MemberMapper {
 	
 	public List<Member> selectAllMember();
 	
+	//2. deleteMember() 작성
+	public void deleteMember(String id);
+	
+	//3. mapper.xml 에 sql 작성 (특정회원삭제) 
+	
 }

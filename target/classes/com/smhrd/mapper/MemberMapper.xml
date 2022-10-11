@@ -17,4 +17,8 @@
 	<select id="selectAllMember" resultType="com.smhrd.model.Member">
 		select * from member
 	</select>
+	
+	<delete id="deleteMember">
+		delete from member where id=#{id}
+	</delete>
 </mapper>

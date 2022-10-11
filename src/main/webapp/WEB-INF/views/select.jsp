@@ -20,7 +20,7 @@
 				<td>${status.count}</td>
 				<td>${member.id }</td>
 				<td>${member.nick }</td>
-				<td><a href="/myapp/member/delete">삭제</a></td>
+				<td><a href="/myapp/member/delete?id=${member.id}">삭제</a></td>
 		</tr>
 		</c:forEach>
 	</table>
